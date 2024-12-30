@@ -14,7 +14,7 @@ Quick guide for install some services from the Arr suite on Proxmox. Also settin
 mkdir /mnt/MyNAS/ && mkdir /mnt/MyNAS/Media
 ```
 ## 2. Then we need to manually mount the shared folder:
-##### Here the "-t nfs" specify the filesystem and the "-o vers=4.1" specify the version of NFS (those are both optional but In my case to avoind any compatiblity issues I do specify it.
+##### Here the "-t nfs" specify the filesystem and the "-o vers=4.1" specify the version of NFS (last one is optional but In my case to avoid any compatiblity issues. I do specify it.
 ```bash
 mount -t nfs -o vers=4.1 nas-ip-address:/Volume1/Media /mnt/MyNAS/Media
 ls -a /mnt/MyNAS/Media
@@ -51,3 +51,8 @@ mp0: /mnt/MyNAS/Media,mp=/mnt/media
 
 ## 1. Go in your Settings, Media Management, Root Folders and add "/mnt/media"
     
+# *qBitorrent (with VPN)*
+
+## 1. Add the network drive like we did before from step 6-8
+
+## 2. 
